@@ -1,2 +1,2 @@
-# CppExtraHeaders
-This repository provides some C++ extra headers
+# C Extra Headers
+This repository provides some C/C++ extra headers
