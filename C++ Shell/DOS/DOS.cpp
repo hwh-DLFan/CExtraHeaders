@@ -1,4 +1,4 @@
-﻿// DOS.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+// DOS.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 
 #include <iostream>
@@ -6,7 +6,7 @@
 bool powershell = true;
 int main()
 {
-    if (std::system("type %windir%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe")) powershell = false;
+    if (std::system("type %windir%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe") && std::system("type %ProgramFiles%\\PowerShell\\7\\pwsh.exe") && std::system("type %ProgramFiles%\\PowerShell\\6\\pwsh.exe") && std::system("type %ProgramFiles(x86)\\PowerShell\\7\\pwsh.exe") && std::system("type %ProgramFiles%\\PowerShell\\6\\pwsh.exe")) powershell = false;
     std::system("cls");
     std::cout << "Thank you for using this application!\n";
 }
